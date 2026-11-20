@@ -1,0 +1,8 @@
+{
+  "name": "gialinh-data-studio",
+  "version": "2.5.0",
+  "description": "Gia Linh Data Studio — Hệ Thống Phân Tích Dữ Liệu Doanh Nghiệp Đa Nền Tảng",
+  "keywords": ["data-studio", "analytics", "enterprise", "dashboard"],
+  "author": "Gia Linh Data Studio",
+  "license": "MIT"
+}

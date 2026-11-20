@@ -1,0 +1,394 @@
+{
+  "metadata": {
+    "company": "EdTech Future",
+    "as_of_date": "2026-11-16",
+    "version": "2.0",
+    "description": "Bộ dữ liệu chuẩn 6 bảng đối chiếu gia hạn học viên EdTech Future (Bao phủ 3 kịch bản: Thông thường, Thiếu dữ liệu, Ranh giới quy tắc)"
+  },
+  "course_catalog": [
+    {
+      "package_id": "ENG-FOUND-01",
+      "package_name": "English Foundation 1 Năm",
+      "level": "A1-A2",
+      "total_sessions": 48,
+      "duration_months": 12,
+      "next_upgrade_package_id": "ENG-INTER-02",
+      "target_commitment": "Giao tiếp cơ bản & Đạt chuẩn A2 CEFR"
+    },
+    {
+      "package_id": "ENG-INTER-02",
+      "package_name": "English Intermediate Pro 1 Năm",
+      "level": "B1-B2",
+      "total_sessions": 60,
+      "duration_months": 12,
+      "next_upgrade_package_id": "ENG-ADV-03",
+      "target_commitment": "Giao tiếp lưu loát & Đạt chuẩn B2 / IELTS 6.0"
+    },
+    {
+      "package_id": "ENG-ADV-03",
+      "package_name": "English Advanced Mastery 1 Năm",
+      "level": "C1",
+      "total_sessions": 72,
+      "duration_months": 12,
+      "next_upgrade_package_id": "ENG-BIZ-04",
+      "target_commitment": "Tiếng Anh Học thuật & Thương mại C1 / IELTS 7.0+"
+    },
+    {
+      "package_id": "ENG-BIZ-04",
+      "package_name": "Executive Business English VIP",
+      "level": "C1-C2",
+      "total_sessions": 72,
+      "duration_months": 12,
+      "next_upgrade_package_id": null,
+      "target_commitment": "Đàm phán & Thuyết trình Quốc tế C2"
+    }
+  ],
+  "pricing_table": [
+    {
+      "package_id": "ENG-FOUND-01",
+      "base_price_vnd": 12000000,
+      "installment_available": true,
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "package_id": "ENG-INTER-02",
+      "base_price_vnd": 16000000,
+      "installment_available": true,
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "package_id": "ENG-ADV-03",
+      "base_price_vnd": 22000000,
+      "installment_available": true,
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "package_id": "ENG-BIZ-04",
+      "base_price_vnd": 28000000,
+      "installment_available": true,
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "as_of_date": "2026-11-16"
+    }
+  ],
+  "discount_policies": [
+    {
+      "policy_code": "EARLY_BIRD_10",
+      "policy_name": "Ưu đãi Gia hạn sớm 10%",
+      "discount_percent": 10,
+      "min_days_to_expiry": 15,
+      "min_attendance_rate": 0.50,
+      "min_tenure_years": 1,
+      "allow_open_tickets": false,
+      "requires_manager_approval": false,
+      "description": "Giảm 10% khi học viên gia hạn trước ngày hết hạn ít nhất 15 ngày và tỷ lệ chuyên cần từ 50% trở lên."
+    },
+    {
+      "policy_code": "HIGH_ACHIEVER_15",
+      "policy_name": "Học bổng Chuyên cần Xuất sắc 15%",
+      "discount_percent": 15,
+      "min_days_to_expiry": 0,
+      "min_attendance_rate": 0.85,
+      "min_tenure_years": 1,
+      "allow_open_tickets": false,
+      "requires_manager_approval": false,
+      "description": "Giảm 15% cho học viên có tỷ lệ thực học >= 85%, đạt cam kết đầu ra và không có khiếu nại kỹ thuật đang mở."
+    },
+    {
+      "policy_code": "LOYALTY_VIP_20",
+      "policy_name": "Ưu đãi Gắn bó Đặc biệt 20% (Cần Phê duyệt)",
+      "discount_percent": 20,
+      "min_days_to_expiry": 0,
+      "min_attendance_rate": 0.75,
+      "min_tenure_years": 2,
+      "allow_open_tickets": false,
+      "requires_manager_approval": true,
+      "description": "Giảm 20% cho học viên gắn bó từ 2 năm trở lên và chuyên cần >= 75%. Bắt buộc phải có Trưởng phòng Kinh doanh phê duyệt."
+    }
+  ],
+  "accounts": [
+    {
+      "account_id": "HV-2026-001",
+      "student_name": "Nguyễn Minh Anh",
+      "email": "minhanh.nguyen@example.com",
+      "phone": "0901234561",
+      "current_package_id": "ENG-FOUND-01",
+      "registered_date": "2025-12-06",
+      "expiry_date": "2026-12-06",
+      "membership_tier": "Gold",
+      "tenure_years": 1,
+      "requested_discount_code": "HIGH_ACHIEVER_15",
+      "scenario_group": "SCENARIO_1_NORMAL",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-002",
+      "student_name": "Trần Hoàng Nam",
+      "email": "hoangnam.tran@example.com",
+      "phone": "0901234562",
+      "current_package_id": "ENG-INTER-02",
+      "registered_date": "2025-12-04",
+      "expiry_date": "2026-12-04",
+      "membership_tier": "Silver",
+      "tenure_years": 1,
+      "requested_discount_code": "EARLY_BIRD_10",
+      "scenario_group": "SCENARIO_1_NORMAL",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-003",
+      "student_name": "Lê Thu Hà",
+      "email": "thuha.le@example.com",
+      "phone": "0901234563",
+      "current_package_id": "ENG-INTER-02",
+      "registered_date": "2024-11-28",
+      "expiry_date": "2026-11-28",
+      "membership_tier": "Platinum",
+      "tenure_years": 2,
+      "requested_discount_code": "LOYALTY_VIP_20",
+      "scenario_group": "SCENARIO_1_NORMAL",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-004",
+      "student_name": "Phạm Quốc Bảo",
+      "email": "quocbao.pham@example.com",
+      "phone": "0901234564",
+      "current_package_id": "ENG-FOUND-01",
+      "registered_date": "2025-11-25",
+      "expiry_date": "2026-11-25",
+      "membership_tier": "Standard",
+      "tenure_years": 1,
+      "requested_discount_code": "EARLY_BIRD_10",
+      "scenario_group": "SCENARIO_2_MISSING_DATA",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-005",
+      "student_name": "Đỗ Khánh Linh",
+      "email": "khanhlinh.do@example.com",
+      "phone": "0901234565",
+      "current_package_id": "ENG-FOUND-01",
+      "registered_date": "2025-11-22",
+      "expiry_date": "2026-11-22",
+      "membership_tier": "Standard",
+      "tenure_years": 1,
+      "requested_discount_code": null,
+      "scenario_group": "SCENARIO_2_MISSING_DATA",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-006",
+      "student_name": "Vũ Đức Trọng",
+      "email": "ductrong.vu@example.com",
+      "phone": "0901234566",
+      "current_package_id": "ENG-INTER-02",
+      "registered_date": "2025-12-08",
+      "expiry_date": "2026-12-08",
+      "membership_tier": "Standard",
+      "tenure_years": 1,
+      "requested_discount_code": "EARLY_BIRD_10",
+      "scenario_group": "SCENARIO_2_MISSING_DATA",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-007",
+      "student_name": "Hoàng Bích Ngọc",
+      "email": "bichngoc.hoang@example.com",
+      "phone": "0901234567",
+      "current_package_id": "ENG-INTER-02",
+      "registered_date": "2025-11-20",
+      "expiry_date": "2026-11-20",
+      "membership_tier": "Gold",
+      "tenure_years": 2,
+      "requested_discount_code": "HIGH_ACHIEVER_15",
+      "scenario_group": "SCENARIO_3_BOUNDARY",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-008",
+      "student_name": "Ngô Tuấn Kiệt",
+      "email": "tuankiet.ngo@example.com",
+      "phone": "0901234568",
+      "current_package_id": "ENG-FOUND-01",
+      "registered_date": "2025-12-01",
+      "expiry_date": "2026-12-01",
+      "membership_tier": "Silver",
+      "tenure_years": 1,
+      "requested_discount_code": "LOYALTY_VIP_20",
+      "scenario_group": "SCENARIO_3_BOUNDARY",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-009",
+      "student_name": "Bùi Phương Thảo",
+      "email": "phuongthao.bui@example.com",
+      "phone": "0901234569",
+      "current_package_id": "ENG-ADV-03",
+      "registered_date": "2025-12-01",
+      "expiry_date": "2026-12-01",
+      "membership_tier": "Gold",
+      "tenure_years": 1,
+      "requested_discount_code": "EARLY_BIRD_10",
+      "scenario_group": "SCENARIO_3_BOUNDARY",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-010",
+      "student_name": "Đặng Gia Huy",
+      "email": "giahuy.dang@example.com",
+      "phone": "0901234570",
+      "current_package_id": "ENG-FOUND-01",
+      "registered_date": "2025-11-19",
+      "expiry_date": "2026-11-19",
+      "membership_tier": "Standard",
+      "tenure_years": 1,
+      "requested_discount_code": "EARLY_BIRD_10",
+      "scenario_group": "SCENARIO_3_BOUNDARY",
+      "as_of_date": "2026-11-16"
+    }
+  ],
+  "attendance_logs": [
+    {
+      "account_id": "HV-2026-001",
+      "registered_sessions": 48,
+      "attended_sessions": 44,
+      "last_attended_date": "2026-11-14",
+      "progress_score": 8.8,
+      "commitment_status": "Đạt cam kết đầu ra",
+      "learning_notes": "Học viên tích cực phát biểu, hoàn thành 100% bài tập về nhà, sẵn sàng lên lộ trình B1-B2.",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-002",
+      "registered_sessions": 60,
+      "attended_sessions": 40,
+      "last_attended_date": "2026-11-12",
+      "progress_score": 6.8,
+      "commitment_status": "Đang củng cố kiến thức",
+      "learning_notes": "Tham gia đều nhưng kỹ năng phản xạ nói cần luyện thêm ở cấp độ B1-B2 trước khi học nâng cao.",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-003",
+      "registered_sessions": 60,
+      "attended_sessions": 54,
+      "last_attended_date": "2026-11-15",
+      "progress_score": 9.1,
+      "commitment_status": "Đạt cam kết đầu ra",
+      "learning_notes": "Học viên năm thứ 2 xuất sắc, đủ năng lực lên gói Advanced Mastery C1.",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-004",
+      "registered_sessions": 48,
+      "attended_sessions": null,
+      "last_attended_date": null,
+      "progress_score": null,
+      "commitment_status": "Chưa đồng bộ dữ liệu LMS",
+      "learning_notes": "Lỗi kết nối đồng bộ log điểm danh từ phân hệ lớp học 1-1.",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-005",
+      "registered_sessions": 48,
+      "attended_sessions": 0,
+      "last_attended_date": null,
+      "progress_score": 0.0,
+      "commitment_status": "Chưa tham gia buổi học nào",
+      "learning_notes": "Đã kích hoạt tài khoản và xếp lớp nhưng học viên vắng mặt toàn bộ (chuyên cần thực tế = 0).",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-006",
+      "registered_sessions": 60,
+      "attended_sessions": 51,
+      "last_attended_date": "2026-10-15",
+      "progress_score": 8.2,
+      "commitment_status": "Đạt cam kết đầu ra (Log cũ)",
+      "learning_notes": "Bản ghi chuyên cần có mốc đối chiếu lệch (2026-10-15 thay vì 2026-11-16), thiếu dữ liệu 1 tháng gần nhất.",
+      "as_of_date": "2026-10-15"
+    },
+    {
+      "account_id": "HV-2026-007",
+      "registered_sessions": 60,
+      "attended_sessions": 55,
+      "last_attended_date": "2026-11-10",
+      "progress_score": 8.9,
+      "commitment_status": "Đạt cam kết đầu ra",
+      "learning_notes": "Học viên học rất tốt (91.7%), tuy nhiên đang rất bức xúc vì lỗi âm thanh phòng học tuần qua chưa được sửa.",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-008",
+      "registered_sessions": 48,
+      "attended_sessions": 38,
+      "last_attended_date": "2026-11-14",
+      "progress_score": 7.4,
+      "commitment_status": "Sát ngưỡng cam kết (79.17%)",
+      "learning_notes": "Chuyên cần đạt 38/48 buổi (79.17% - sát ranh giới 80%). Học viên mới học 1 năm nhưng yêu cầu mã LOYALTY_VIP_20.",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-009",
+      "registered_sessions": 72,
+      "attended_sessions": 58,
+      "last_attended_date": "2026-11-15",
+      "progress_score": 8.0,
+      "commitment_status": "Đạt cam kết đầu ra",
+      "learning_notes": "Chuyên cần 80.56% (vừa qua ngưỡng 80%), ngày hết hạn 2026-12-01 (đúng bằng 15 ngày so với mốc 2026-11-16).",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "account_id": "HV-2026-010",
+      "registered_sessions": 48,
+      "attended_sessions": 18,
+      "last_attended_date": "2026-11-01",
+      "progress_score": 4.5,
+      "commitment_status": "Chưa đạt cam kết đầu ra",
+      "learning_notes": "Chỉ còn 3 ngày là hết hạn (Khẩn cấp), chuyên cần thấp (37.5%), học viên đòi áp mã EARLY_BIRD_10 dù đã trễ hạn 15 ngày.",
+      "as_of_date": "2026-11-16"
+    }
+  ],
+  "support_tickets": [
+    {
+      "ticket_id": "TK-9001",
+      "account_id": "HV-2026-002",
+      "issue_category": "Tài liệu học tập",
+      "severity": "Low",
+      "description": "Không tải được file PDF bài tập tuần 18",
+      "status": "Resolved",
+      "created_date": "2026-10-20",
+      "resolved_date": "2026-10-21",
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "ticket_id": "TK-9002",
+      "account_id": "HV-2026-007",
+      "issue_category": "Lỗi Kỹ thuật Phòng học Trực tuyến",
+      "severity": "High",
+      "description": "Mất kết nối micro và bị văng khỏi lớp học 1-1 trên ứng dụng liên tục 3 buổi gần nhất, chưa khắc phục được.",
+      "status": "Open",
+      "created_date": "2026-11-11",
+      "resolved_date": null,
+      "as_of_date": "2026-11-16"
+    },
+    {
+      "ticket_id": "TK-9003",
+      "account_id": "HV-2026-004",
+      "issue_category": "Đồng bộ Dữ liệu",
+      "severity": "Medium",
+      "description": "Lịch sử điểm danh trên App học viên hiển thị trống dù giáo viên báo đã dạy.",
+      "status": "In Progress",
+      "created_date": "2026-11-13",
+      "resolved_date": null,
+      "as_of_date": "2026-11-16"
+    }
+  ]
+}

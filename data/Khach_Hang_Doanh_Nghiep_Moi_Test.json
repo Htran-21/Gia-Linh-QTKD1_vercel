@@ -1,0 +1,67 @@
+﻿[
+    {
+        "Mã Khách Hàng":  "DN-CUSTOM-001",
+        "Tên Doanh Nghiệp":  "Công ty CP Dịch Vụ Hàng Hải Biển Đông",
+        "Người Đại Diện":  "Vũ Đình Cường",
+        "Lĩnh Vực":  "Vận Tải Biển \u0026 Cảng Biển",
+        "Phân Khúc":  "Enterprise VIP",
+        "Gói Dịch Vụ Hiện Tại":  "Hạ Tầng Điện Toán Mở Rộng",
+        "Hạn Hợp Đồng":  "2026-12-25",
+        "Tỷ Lệ Sử Dụng (%)":  95,
+        "Sự Cố Kỹ Thuật":  "Không có sự cố",
+        "Giá Trị Hợp Đồng":  120000000,
+        "Chiết Khấu (%)":  10
+    },
+    {
+        "Mã Khách Hàng":  "DN-CUSTOM-002",
+        "Tên Doanh Nghiệp":  "Tập đoàn Dệt May Thăng Long",
+        "Người Đại Diện":  "Hoàng Kim Oanh",
+        "Lĩnh Vực":  "Sản Xuất \u0026 Xuất Khẩu",
+        "Phân Khúc":  "SME",
+        "Gói Dịch Vụ Hiện Tại":  "Điện Toán Đám Mây Cơ Bản",
+        "Hạn Hợp Đồng":  "2026-12-18",
+        "Tỷ Lệ Sử Dụng (%)":  62.5,
+        "Sự Cố Kỹ Thuật":  "Không có sự cố",
+        "Giá Trị Hợp Đồng":  65000000,
+        "Chiết Khấu (%)":  5
+    },
+    {
+        "Mã Khách Hàng":  "DN-CUSTOM-003",
+        "Tên Doanh Nghiệp":  "Chuỗi Nhà Thuốc An Tâm",
+        "Người Đại Diện":  "Bùi Minh Tâm",
+        "Lĩnh Vực":  "Bán Lẻ Y Tế \u0026 Dược Phẩm",
+        "Phân Khúc":  "SME",
+        "Gói Dịch Vụ Hiện Tại":  "Điện Toán Đám Mây Cơ Bản",
+        "Hạn Hợp Đồng":  "2026-11-30",
+        "Tỷ Lệ Sử Dụng (%)":  null,
+        "Sự Cố Kỹ Thuật":  "Không có sự cố",
+        "Giá Trị Hợp Đồng":  45000000,
+        "Chiết Khấu (%)":  0
+    },
+    {
+        "Mã Khách Hàng":  "DN-CUSTOM-004",
+        "Tên Doanh Nghiệp":  "Công ty TNHH Vận Tải Sao Vàng",
+        "Người Đại Diện":  "Đỗ Cao Thắng",
+        "Lĩnh Vực":  "Giao Nhận Nhanh \u0026 Kho Bãi",
+        "Phân Khúc":  "Enterprise VIP",
+        "Gói Dịch Vụ Hiện Tại":  "Hạ Tầng Điện Toán Mở Rộng",
+        "Hạn Hợp Đồng":  "2026-12-10",
+        "Tỷ Lệ Sử Dụng (%)":  88,
+        "Sự Cố Kỹ Thuật":  "Sự cố Mở (Ticket TK-9901 CSDL)",
+        "Giá Trị Hợp Đồng":  150000000,
+        "Chiết Khấu (%)":  10
+    },
+    {
+        "Mã Khách Hàng":  "DN-CUSTOM-005",
+        "Tên Doanh Nghiệp":  "Công ty Năng Lượng Mặt Trời SolarTech",
+        "Người Đại Diện":  "Nguyễn Văn Đạt",
+        "Lĩnh Vực":  "Năng Lượng Tái Tạo",
+        "Phân Khúc":  "Doanh Nghiệp Tiêu Chuẩn",
+        "Gói Dịch Vụ Hiện Tại":  "Điện Toán Đám Mây Cơ Bản",
+        "Hạn Hợp Đồng":  "2026-12-05",
+        "Tỷ Lệ Sử Dụng (%)":  0,
+        "Sự Cố Kỹ Thuật":  "Không có sự cố",
+        "Giá Trị Hợp Đồng":  35000000,
+        "Chiết Khấu (%)":  0
+    }
+]

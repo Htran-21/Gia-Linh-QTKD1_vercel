@@ -1,0 +1,435 @@
+# Generator script for outputs/EdTech_Future_AI_Presentation_10_Slides.html
+$slideHtml = @'
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Báo Cáo Tổng Quan & Slide Trình Chiếu — EdTech Future AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: #0f172a;
+      color: #0f172a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .slide-viewport {
+      width: 100%;
+      max-width: 1200px;
+      aspect-ratio: 16 / 9;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+    .slide-item {
+      position: absolute;
+      inset: 0;
+      padding: 3rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .slide-item.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body class="p-3 sm:p-6">
+
+  <!-- TOP BAR CONTROLS -->
+  <header class="w-full max-w-[1200px] mb-3 flex items-center justify-between text-white text-xs select-none">
+    <div class="flex items-center gap-2">
+      <div class="w-6 h-6 rounded-lg bg-purple-600 flex items-center justify-center font-bold text-xs">EF</div>
+      <span class="font-bold tracking-tight">EdTech Future AI — Bản Trình Chiếu 10 Slide Chuẩn Template</span>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <button onclick="prevSlide()" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold transition">⮜ Trước</button>
+      <span id="slideCounter" class="px-3 py-1.5 rounded-xl bg-purple-600/80 text-white font-extrabold font-mono">01 / 10</span>
+      <button onclick="nextSlide()" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold transition">Sau ⮞</button>
+      <button onclick="toggleFullscreen()" class="px-3 py-1.5 rounded-xl bg-slate-700 hover:bg-slate-600 text-white font-bold transition">⛶ Toàn màn hình</button>
+    </div>
+  </header>
+
+  <!-- 16:9 PRESENTATION VIEWPORT -->
+  <div id="presentationBox" class="slide-viewport">
+
+    <!-- SLIDE 1: COVER -->
+    <div class="slide-item active" id="slide-1">
+      <div class="flex justify-between items-start">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-purple-600 text-white flex items-center justify-center font-extrabold text-sm shadow-xs">EF</div>
+          <span class="font-extrabold text-sm text-slate-800 tracking-wider">EDTECH FUTURE</span>
+        </div>
+        <div class="px-3 py-1 rounded-full bg-purple-50 text-purple-700 font-extrabold text-xs border border-purple-200">QUÝ 4 2036</div>
+      </div>
+      <div class="space-y-3.5 my-auto">
+        <div class="text-xs font-extrabold tracking-widest text-purple-600 uppercase">BÁO CÁO TỔNG QUAN HỆ THỐNG</div>
+        <h1 class="text-4xl font-extrabold text-slate-900 leading-tight">HỆ THỐNG AI AGENT ĐIỀU PHỐI GIA HẠN KHÓA HỌC</h1>
+        <p class="text-sm text-slate-500 max-w-2xl leading-relaxed">Đánh Giá Hiệu Suất Vận Hành Tự Động, Đối Soát Dữ Liệu Đa Phòng Ban (CS - Sales - Tech) & Kế Hoạch Năm 2037</p>
+      </div>
+      <div class="flex justify-between items-center text-xs pt-4 border-t border-slate-100 text-slate-500">
+        <div>Người trình bày: <strong class="text-slate-800">Phạm Kim Cương</strong></div>
+        <div>Phòng ban: <strong class="text-slate-800">Vận Hành & Công Nghệ AI</strong></div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: KPI SUMMARY -->
+    <div class="slide-item" id="slide-2">
+      <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+        <h2 class="font-extrabold text-base text-slate-900 uppercase">Tóm Tắt Chỉ Số Hoàn Thành Mục Tiêu</h2>
+        <span class="text-xs text-purple-700 font-extrabold">SLIDE 02</span>
+      </div>
+      <div class="grid grid-cols-5 gap-3 my-auto text-center">
+        <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-1">
+          <div class="text-3xl font-extrabold text-emerald-950">98%</div>
+          <div class="text-[11px] text-emerald-800 font-bold leading-tight">Dữ liệu được làm sạch & đối soát tự động</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-purple-50 border border-purple-200 space-y-1">
+          <div class="text-3xl font-extrabold text-purple-950">85%</div>
+          <div class="text-[11px] text-purple-800 font-bold leading-tight">Thời gian duyệt thủ công được cắt giảm</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-sky-50 border border-sky-200 space-y-1">
+          <div class="text-3xl font-extrabold text-sky-950">74%</div>
+          <div class="text-[11px] text-sky-800 font-bold leading-tight">Tỷ lệ học viên đạt điều kiện gia hạn có căn cứ</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 space-y-1">
+          <div class="text-3xl font-extrabold text-amber-950">1,48 TỶ</div>
+          <div class="text-[11px] text-amber-800 font-bold leading-tight">Doanh thu gia hạn đủ căn cứ ghi nhận (150 TK)</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-rose-50 border border-rose-200 space-y-1">
+          <div class="text-3xl font-extrabold text-rose-950">0%</div>
+          <div class="text-[11px] text-rose-800 font-bold leading-tight">Sai sót chính sách học phí & lỗi kỹ thuật</div>
+        </div>
+      </div>
+      <div class="p-3.5 rounded-xl bg-purple-50 border border-purple-200 text-xs text-purple-950 font-medium text-center">
+        Hệ thống AI Agent tự động hóa chuẩn bị danh sách gia hạn có căn cứ, triệt tiêu xung đột giữa CS - Sales - Tech, giúp Trưởng phòng Kinh doanh giải phóng 85% thời gian phê duyệt thủ công.
+      </div>
+    </div>
+
+    <!-- SLIDE 3: CORE STRATEGY -->
+    <div class="slide-item" id="slide-3">
+      <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+        <h2 class="font-extrabold text-base text-slate-900 uppercase">Phân Tích Mục Tiêu Chiến Lược Cốt Lõi</h2>
+        <span class="text-xs text-purple-700 font-extrabold">SLIDE 03</span>
+      </div>
+      <div class="grid grid-cols-4 gap-3.5 my-auto">
+        <div class="p-4 rounded-2xl border border-slate-200 bg-white space-y-2">
+          <div class="text-2xl font-extrabold text-purple-700">6 BẢNG</div>
+          <div class="font-bold text-xs text-slate-800 uppercase">TẬP TRUNG DỮ LIỆU</div>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Đồng bộ CRM, LMS, Tech Support, Biểu phí và Chính sách ưu đãi về 1 mốc đối chiếu chung (as_of_date).</p>
+        </div>
+        <div class="p-4 rounded-2xl border border-slate-200 bg-white space-y-2">
+          <div class="text-2xl font-extrabold text-emerald-700">100%</div>
+          <div class="font-bold text-xs text-slate-800 uppercase">TÁCH NULL ≠ 0</div>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Phân định tuyệt đối giữa khuyết log LMS (tạm giữ) và học viên tham gia 0 buổi (phụ đạo kiến thức).</p>
+        </div>
+        <div class="p-4 rounded-2xl border border-slate-200 bg-white space-y-2">
+          <div class="text-2xl font-extrabold text-sky-700">GIẢM 85%</div>
+          <div class="font-bold text-xs text-slate-800 uppercase">RÚT NGẮN DUYỆT</div>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Tự động tính phí chính xác; Quản lý chỉ duyệt các trường hợp ưu đãi ngoại lệ tại Cổng HITL.</p>
+        </div>
+        <div class="p-4 rounded-2xl border border-slate-200 bg-white space-y-2">
+          <div class="text-2xl font-extrabold text-rose-700">0 LỖI</div>
+          <div class="font-bold text-xs text-slate-800 uppercase">GUARDRAIL KHÓA CHẶN</div>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Cấm tuyệt đối chào gói nâng cấp khi Ticket kỹ thuật đang mở; không tự tiện hứa hẹn ưu đãi.</p>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 text-center">4 trụ cột bảo đảm tính minh bạch, chính xác và đồng bộ trong toàn bộ quy trình chăm sóc khách hàng.</div>
+    </div>
+
+    <!-- SLIDE 4: REVENUE & LIFECYCLE -->
+    <div class="slide-item" id="slide-4">
+      <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+        <h2 class="font-extrabold text-base text-slate-900 uppercase">Báo Cáo Cơ Cấu Doanh Thu & 4 Giai Đoạn Quy Trình</h2>
+        <span class="text-xs text-purple-700 font-extrabold">SLIDE 04</span>
+      </div>
+      <div class="grid grid-cols-12 gap-5 my-auto items-center">
+        <!-- Donut Breakdown -->
+        <div class="col-span-5 p-4 rounded-2xl border border-slate-200 bg-purple-50/40 text-center space-y-2">
+          <div class="font-bold text-xs text-slate-800 uppercase">Cơ Cấu Giá Trị Gia Hạn</div>
+          <div class="text-xs text-slate-600 font-semibold">68% Đủ căn cứ • 18% Chờ duyệt • 14% Tạm giữ</div>
+          <div class="grid grid-cols-2 gap-2 text-[11px] pt-1">
+            <div class="p-2 rounded-xl bg-white border border-emerald-200 font-bold text-emerald-800">Đủ căn cứ: 68%</div>
+            <div class="p-2 rounded-xl bg-white border border-purple-200 font-bold text-purple-800">Chờ duyệt: 18%</div>
+            <div class="p-2 rounded-xl bg-white border border-rose-200 font-bold text-rose-800">Chặn lỗi Tech: 10%</div>
+            <div class="p-2 rounded-xl bg-white border border-amber-200 font-bold text-amber-800">Khuyết log: 4%</div>
+          </div>
+        </div>
+        <!-- 4 Process Stages -->
+        <div class="col-span-7 grid grid-cols-2 gap-2.5 text-xs">
+          <div class="p-3 rounded-xl border border-slate-200 bg-white space-y-1">
+            <span class="font-extrabold text-purple-700">1. KẾT NỐI</span>
+            <p class="text-[11px] text-slate-500">Thu thập dữ liệu đa nguồn và khóa mốc ngày as_of_date.</p>
+          </div>
+          <div class="p-3 rounded-xl border border-slate-200 bg-white space-y-1">
+            <span class="font-extrabold text-emerald-700">2. LÀM SẠCH</span>
+            <p class="text-[11px] text-slate-500">Khử trùng lặp, chuẩn ISO ngày tháng, tách biệt NULL ≠ 0.</p>
+          </div>
+          <div class="p-3 rounded-xl border border-slate-200 bg-white space-y-1">
+            <span class="font-extrabold text-sky-700">3. PHÂN TÍCH</span>
+            <p class="text-[11px] text-slate-500">Tính học phí theo chính sách, kiểm soát Churn & HITL.</p>
+          </div>
+          <div class="p-3 rounded-xl border border-slate-200 bg-white space-y-1">
+            <span class="font-extrabold text-amber-700">4. BÁO CÁO</span>
+            <p class="text-[11px] text-slate-500">Xuất Dashboard, Slide, file Excel làm sạch & nháp email.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 text-center">Phân loại chặt chẽ từng đồng doanh thu đảm bảo số liệu kinh doanh có cơ sở vững chắc.</div>
+    </div>
+
+    <!-- SLIDE 5: PROGRESS SCENARIOS -->
+    <div class="slide-item" id="slide-5">
+      <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+        <h2 class="font-extrabold text-base text-slate-900 uppercase">Cập Nhật Tiến Độ & Kiểm Thử 3 Kịch Bản Trọng Điểm</h2>
+        <span class="text-xs text-purple-700 font-extrabold">SLIDE 05</span>
+      </div>
+      <div class="space-y-3 my-auto text-xs">
+        <div class="p-3.5 rounded-xl border border-slate-200 bg-white flex justify-between items-center">
+          <div>
+            <div class="font-bold text-slate-800">Kịch bản 1: Hồ sơ Thông thường (HV-001, 002, 003, 008)</div>
+            <div class="text-[11px] text-slate-500">Chuyên cần tốt ≥80%, không lỗi Tech, tự động áp mã Early Bird 10%, High Achiever 15%.</div>
+          </div>
+          <span class="px-3 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-extrabold text-xs">HOÀN THÀNH 100%</span>
+        </div>
+        <div class="p-3.5 rounded-xl border border-slate-200 bg-white flex justify-between items-center">
+          <div>
+            <div class="font-bold text-slate-800">Kịch bản 2: Thiếu hụt Dữ liệu (HV-004, 005, 006)</div>
+            <div class="text-[11px] text-slate-500">Tách biệt rõ NULL vs 0 buổi; phát hiện log cũ lệch mốc as_of_date; tạm giữ doanh thu.</div>
+          </div>
+          <span class="px-3 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-extrabold text-xs">HOÀN THÀNH 100%</span>
+        </div>
+        <div class="p-3.5 rounded-xl border border-slate-200 bg-white flex justify-between items-center">
+          <div>
+            <div class="font-bold text-slate-800">Kịch bản 3: Ranh giới Quy tắc Nghiệp vụ (HV-007, 009, 010)</div>
+            <div class="text-[11px] text-slate-500">Khóa chặn lỗi Tech Ticket open (HV-007); từ chối mã ưu đãi vi phạm điều kiện ngày & chuyên cần.</div>
+          </div>
+          <span class="px-3 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-extrabold text-xs">HOÀN THÀNH 100%</span>
+        </div>
+      </div>
+      <div class="flex justify-between items-center p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs font-semibold text-slate-600">
+        <span>Tổng số Kịch bản: <strong>3/3</strong></span>
+        <span>Tỷ lệ Đạt Chuẩn: <strong>100%</strong></span>
+        <span>Tốc độ Xử lý: <strong>&lt; 3 giây / 150 hồ sơ</strong></span>
+      </div>
+    </div>
+
+    <!-- SLIDE 6: RESOURCE ALLOCATION -->
+    <div class="slide-item" id="slide-6">
+      <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+        <h2 class="font-extrabold text-base text-slate-900 uppercase">Tỷ Trọng Phân Bổ Nguồn Lực & Thời Gian Phối Hợp</h2>
+        <span class="text-xs text-purple-700 font-extrabold">SLIDE 06</span>
+      </div>
+      <div class="grid grid-cols-4 gap-3.5 my-auto text-xs">
+        <div class="p-4 rounded-2xl bg-purple-50 border border-purple-200 space-y-1.5">
+          <div class="text-3xl font-extrabold text-purple-950">40%</div>
+          <div class="font-bold text-purple-900 uppercase text-[11px]">TƯ VẤN TUYỂN SINH (SALES)</div>
+          <p class="text-[11px] text-purple-800 leading-relaxed">Gọi điện đúng thời điểm (expiry - 30 ngày), dùng nháp AI có sẵn lý do và học phí.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-rose-50 border border-rose-200 space-y-1.5">
+          <div class="text-3xl font-extrabold text-rose-950">30%</div>
+          <div class="font-bold text-rose-900 uppercase text-[11px]">KỸ THUẬT - HỌC VỤ (TECH)</div>
+          <p class="text-[11px] text-rose-800 leading-relaxed">Ưu tiên sửa dứt điểm các Ticket Open trước khi kỳ gia hạn bắt đầu để tháo Hard-Block.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-1.5">
+          <div class="text-3xl font-extrabold text-emerald-950">20%</div>
+          <div class="font-bold text-emerald-900 uppercase text-[11px]">CHĂM SÓC HỌC VIÊN (CS)</div>
+          <p class="text-[11px] text-emerald-800 leading-relaxed">Hỗ trợ các ca chuyên cần thấp (0% hoặc &lt;50%), tư vấn lộ trình phụ đạo củng cố đầu ra.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200 space-y-1.5">
+          <div class="text-3xl font-extrabold text-amber-950">10%</div>
+          <div class="font-bold text-amber-900 uppercase text-[11px]">TRƯỞNG PHÒNG KINH DOANH</div>
+          <p class="text-[11px] text-amber-800 leading-relaxed">Chỉ cần duyệt các trường hợp ưu đãi ngoại lệ &gt;15% tại Cổng HITL (giải phóng 85% thời gian).</p>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 text-center">Phân bổ trách nhiệm rõ ràng giúp loại bỏ tình trạng đùn đẩy và bỏ sót yêu cầu của học viên.</div>
+    </div>
+
+    <!-- SLIDE 7: SWOT MATRIX -->
+    <div class="slide-item" id="slide-7">
+      <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+        <h2 class="font-extrabold text-base text-slate-900 uppercase">Phân Tích Ma Trận SWOT Hệ Thống</h2>
+        <span class="text-xs text-purple-700 font-extrabold">SLIDE 07</span>
+      </div>
+      <div class="grid grid-cols-2 gap-3.5 my-auto text-xs">
+        <div class="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-1">
+          <div class="font-bold text-emerald-950 uppercase text-xs">S - ĐIỂM MẠNH (STRENGTHS)</div>
+          <p class="text-[11px] text-emerald-900 leading-relaxed">Tính toán Deterministic chuẩn xác 100%, bảo vệ uy tín bằng Hard-Block lỗi Tech, phân biệt rõ NULL ≠ 0.</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-amber-50 border border-amber-200 space-y-1">
+          <div class="font-bold text-amber-950 uppercase text-xs">W - ĐIỂM YẾU (WEAKNESSES)</div>
+          <p class="text-[11px] text-amber-900 leading-relaxed">Phụ thuộc vào ý thức cập nhật trạng thái đóng Ticket của Tech và việc đồng bộ log điểm danh từ LMS.</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-sky-50 border border-sky-200 space-y-1">
+          <div class="font-bold text-sky-950 uppercase text-xs">O - CƠ HỘI (OPPORTUNITIES)</div>
+          <p class="text-[11px] text-sky-900 leading-relaxed">Mở rộng quy mô lên 1.500+ học viên/tháng không tăng nhân sự; tích hợp thêm Zalo ZNS và Email Automation.</p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-rose-50 border border-rose-200 space-y-1">
+          <div class="font-bold text-rose-950 uppercase text-xs">T - THÁCH THỨC (THREATS)</div>
+          <p class="text-[11px] text-rose-900 leading-relaxed">Thay đổi chính sách học phí đòi hỏi cập nhật bảng quy tắc; sự phối hợp liên phòng ban cần tính kỷ luật cao.</p>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 text-center">Nắm chắc điểm mạnh và kiểm soát rủi ro giúp hệ thống vận hành bền vững dài hạn.</div>
+    </div>
+
+    <!-- SLIDE 8: CORE COMPETENCIES -->
+    <div class="slide-item" id="slide-8">
+      <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+        <h2 class="font-extrabold text-base text-slate-900 uppercase">Năng Lực Cốt Lõi & Giá Trị Đội Ngũ Mang Lại</h2>
+        <span class="text-xs text-purple-700 font-extrabold">SLIDE 08</span>
+      </div>
+      <div class="grid grid-cols-3 gap-3.5 my-auto text-xs">
+        <div class="p-4 rounded-2xl bg-purple-50 border border-purple-200 space-y-1.5">
+          <div class="font-bold text-purple-950 uppercase text-xs">GIÁ TRỊ DOANH NGHIỆP</div>
+          <p class="text-[11px] text-purple-900 leading-relaxed">
+            • Bảo toàn 100% doanh thu có căn cứ.<br>
+            • Triệt tiêu thất thoát do áp sai mã ưu đãi.<br>
+            • Tiết kiệm 120+ giờ làm việc thủ công/tháng.
+          </p>
+        </div>
+        <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-1.5">
+          <div class="font-bold text-emerald-950 uppercase text-xs">KỸ NĂNG NGHIỆP VỤ</div>
+          <p class="text-[11px] text-emerald-900 leading-relaxed">
+            • Phối hợp liên phòng ban chặt chẽ.<br>
+            • Kiểm soát Human-in-the-Loop tại 2 chốt chặn.<br>
+            • Chăm sóc học viên cá nhân hóa theo dữ liệu.
+          </p>
+        </div>
+        <div class="p-4 rounded-2xl bg-sky-50 border border-sky-200 space-y-1.5">
+          <div class="font-bold text-sky-950 uppercase text-xs">KỸ NĂNG CÔNG NGHỆ</div>
+          <p class="text-[11px] text-sky-900 leading-relaxed">
+            • 4 AI Skills: Ingestion, Timeline, Pricing, Guardrail.<br>
+            • Audit Logging JSONL truy vết từng quy tắc.<br>
+            • Chạy cục bộ bảo mật, xuất Excel 6 sheet.
+          </p>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 text-center">Kết hợp sức mạnh tính toán tự động với năng lực ra quyết định chiến lược của con người.</div>
+    </div>
+
+    <!-- SLIDE 9: ROADMAP 2037 -->
+    <div class="slide-item" id="slide-9">
+      <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+        <h2 class="font-extrabold text-base text-slate-900 uppercase">Tổng Kết & Kế Hoạch Triển Khai Năm 2037</h2>
+        <span class="text-xs text-purple-700 font-extrabold">SLIDE 09</span>
+      </div>
+      <div class="grid grid-cols-2 gap-4 my-auto text-xs">
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+          <div class="font-bold text-purple-700 uppercase text-xs">KẾ HOẠCH 6 THÁNG ĐẦU NĂM</div>
+          <div class="space-y-1.5 text-[11px] text-slate-600 leading-relaxed">
+            <div><strong>01. Công việc:</strong> Vận hành chính thức cho 150 tài khoản/tháng; đồng bộ API Google Sheets.</div>
+            <div><strong>02. Thách thức:</strong> Tập huấn Sales & CS làm quen quy trình rà soát tự động.</div>
+            <div><strong>03. Mục tiêu:</strong> Tỷ lệ gia hạn thành công ≥ 85%, 100% hồ sơ gọi trước 30 ngày.</div>
+          </div>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+          <div class="font-bold text-emerald-700 uppercase text-xs">KẾ HOẠCH 6 THÁNG CUỐI NĂM</div>
+          <div class="space-y-1.5 text-[11px] text-slate-600 leading-relaxed">
+            <div><strong>01. Công việc:</strong> Tự động gửi tin Zalo ZNS / Email cá nhân hóa; mở rộng toàn quốc.</div>
+            <div><strong>02. Thách thức:</strong> Tối ưu mô hình dự báo Churn Risk Score theo thời gian thực.</div>
+            <div><strong>03. Mục tiêu:</strong> Quy mô 1.000+ tài khoản/tháng, giảm Churn dưới 4%, tăng Up-sell 25%.</div>
+          </div>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 text-center">Lộ trình triển khai theo từng giai đoạn bảo đảm tính ổn định và khả năng mở rộng quy mô.</div>
+    </div>
+
+    <!-- SLIDE 10: CLOSING -->
+    <div class="slide-item text-center items-center" id="slide-10">
+      <div class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold text-sm">EF</div>
+        <span class="font-extrabold text-sm text-slate-800 tracking-wider">EDTECH FUTURE</span>
+      </div>
+      <div class="space-y-3.5 my-auto">
+        <h1 class="text-4xl font-extrabold text-slate-900">XIN TRÂN TRỌNG CẢM ƠN!</h1>
+        <p class="text-sm text-slate-500 max-w-lg mx-auto">Hệ thống AI Agent Điều Phối Gia Hạn Khóa Học — Sẵn sàng phục vụ và nâng tầm vận hành doanh nghiệp.</p>
+        <div class="inline-block px-4 py-2 rounded-xl bg-purple-50 text-purple-700 font-bold text-xs border border-purple-200">
+          🌐 Trải nghiệm trực tiếp tại: http://localhost:8080
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 flex gap-4">
+        <span>Email: contact@edtechfuture.edu.vn</span>
+        <span>•</span>
+        <span>Hotline: 024.3733.3534</span>
+        <span>•</span>
+        <span>DataLens Studio v3.0</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM THUMBNAILS -->
+  <footer class="w-full max-w-[1200px] mt-3 grid grid-cols-10 gap-1.5 text-center text-xs select-none">
+    <button onclick="goToSlide(1)" id="btn-1" class="py-1 px-1.5 rounded-lg bg-purple-600 text-white font-bold text-[10px]">01 Bìa</button>
+    <button onclick="goToSlide(2)" id="btn-2" class="py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]">02 KPI</button>
+    <button onclick="goToSlide(3)" id="btn-3" class="py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]">03 Cốt lõi</button>
+    <button onclick="goToSlide(4)" id="btn-4" class="py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]">04 D.Thu</button>
+    <button onclick="goToSlide(5)" id="btn-5" class="py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]">05 T.Độ</button>
+    <button onclick="goToSlide(6)" id="btn-6" class="py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]">06 N.Lực</button>
+    <button onclick="goToSlide(7)" id="btn-7" class="py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]">07 SWOT</button>
+    <button onclick="goToSlide(8)" id="btn-8" class="py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]">08 Giá trị</button>
+    <button onclick="goToSlide(9)" id="btn-9" class="py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]">09 Lộ trình</button>
+    <button onclick="goToSlide(10)" id="btn-10" class="py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]">10 Kết</button>
+  </footer>
+
+  <script>
+    let current = 1;
+    function goToSlide(n) {
+      if (n < 1) n = 1;
+      if (n > 10) n = 10;
+      current = n;
+      for (let i = 1; i <= 10; i++) {
+        const s = document.getElementById('slide-' + i);
+        const b = document.getElementById('btn-' + i);
+        if (s) s.classList.toggle('active', i === n);
+        if (b) {
+          if (i === n) {
+            b.className = 'py-1 px-1.5 rounded-lg bg-purple-600 text-white font-bold text-[10px]';
+          } else {
+            b.className = 'py-1 px-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 font-bold text-[10px]';
+          }
+        }
+      }
+      document.getElementById('slideCounter').textContent = (n < 10 ? '0' + n : n) + ' / 10';
+    }
+
+    function prevSlide() { goToSlide(current - 1); }
+    function nextSlide() { goToSlide(current + 1); }
+
+    function toggleFullscreen() {
+      const box = document.getElementById('presentationBox');
+      if (!document.fullscreenElement) {
+        box.requestFullscreen().catch(err => alert(err.message));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+  </script>
+</body>
+</html>
+'@
+
+$outPath = "c:\Users\ADMIN\Downloads\AI Agent CK\outputs\EdTech_Future_AI_Presentation_10_Slides.html"
+[System.IO.File]::WriteAllText($outPath, $slideHtml, [System.Text.Encoding]::UTF8)
+Write-Output "Successfully created standalone 10-slide presentation at $outPath"
